@@ -1,5 +1,7 @@
 package RotateList;
 
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Finish the class RotateList make it subclasse the built-in List class. (Hint extends ?????)
@@ -10,5 +12,11 @@ package RotateList;
  * Try solving this without creating a copy of the list.
  * How many swap or move operations do you need?
  */
-public class RotateList{
+	
+public class RotateList extends ArrayList<Integer> {
+	
+	public void rotate(int offset) {
+		Collections.rotate(this, -offset);
+	}
+
 }
